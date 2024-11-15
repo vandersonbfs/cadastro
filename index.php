@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
 <!-- https://www.youtube.com/watch?v=BSqtIw_hW8M -->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +28,7 @@
                         <a class="nav-link" href="?page=listar">Listar usuários</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="?page=empresa">Nova Empresa</a>
+                        <a class="nav-link" href="?page=empresa">Nova Empresa</a>
                     </li>
                 </ul>
             </div>
@@ -48,11 +49,14 @@
                     case 'empresa':
                         include("nova-empresa.php");
                         break;
-                        case 'salvar':
-                            include("salvar-usuario.php");
-                            break;
+                    case 'salvar':
+                        include("salvar-usuario.php");
+                        break;
+                    case 'editar':
+                        include("editar-usuario.php");
+                        break;
                     default:
-                        print "<h1>Bem vindos!</h1>";
+                        print "<h2>Bem vindos!</h2>";
                         break;
                 }
                 ?>
